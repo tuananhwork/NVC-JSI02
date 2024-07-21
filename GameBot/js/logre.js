@@ -1,4 +1,7 @@
-import { createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js';
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from 'https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js';
 import { auth } from './firebase-config.js';
 
 const signInButton = document.getElementById('signIn');
@@ -18,10 +21,13 @@ const toast = document.querySelector('.toast');
   });
 })();
 
-// Handle go to Home page
-const redirectHome = () => {
+// Handle Toast
+const handleToast = (content, bgColor) => {
+  toast.style.display = 'block';
+  toast.style.backgroundColor = bgColor;
+  toast.textContent = content;
   setTimeout(() => {
-    window.location.href = 'index.html';
+    toast.style.display = 'none';
   }, 1000);
 };
 
@@ -35,37 +41,23 @@ registerForm.addEventListener('submit', async (event) => {
 
   try {
     const res = await createUserWithEmailAndPassword(auth, email, password);
-    toast.innerHTML = 'Login Success!';
-    toast.style.display = 'block';
-    toast.style.backgroundColor = 'green';
-    redirectHome();
+    handleToast('Register Success!', 'green');
   } catch (error) {
-    toast.innerHTML = error.message;
-    toast.style.display = 'block';
-    toast.style.backgroundColor = 'red';
+    handleToast(error.message, 'red');
   }
 });
 
 // Login User
-loginForm.addEventListener('submit', function (event) {
+loginForm.addEventListener('submit', async (event) => {
   event.preventDefault();
   const email = document.getElementById('loginEmail').value;
   const password = document.getElementById('loginPassword').value;
 
-  // Retrieve stored users data
-  const storedUsers = JSON.parse(localStorage.getItem('users')) || [];
-
-  // Check if user exists and password matches
-  const user = storedUsers.find((user) => user.email === email && user.password === password);
-  if (user) {
-    alert('Login successful');
-    // Save user object with login status
-    user.isLoggedIn = true;
-    localStorage.setItem('loggedInUser', JSON.stringify(user));
-    // Redirect to the main page after successful login
-    window.location.href = 'index.html';
-  } else {
-    alert('Invalid email or password');
+  try {
+    const res = await signInWithEmailAndPassword(auth, email, password);
+    handleToast('Login Success!', 'green');
+  } catch (error) {
+    handleToast(error.message, 'red');
   }
 });
 
