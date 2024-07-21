@@ -1,0 +1,333 @@
+[
+  {
+    "userImg" : "./img/user-avatar/user056.webp",
+    "nickname": "Mr_Papiolas",
+    "username": "@Mr_Papiolas",
+    "timePosted": "2 hours ago",
+    "postImg": "./img/fireside/fireside01.webp",
+    "content": "Wellcome, dude!",
+    "supporters": ["./img/user-avatar/user021.webp", "./img/user-avatar/user027.webp", "./img/user-avatar/user022.webp"],
+    "stickers": {
+      "sticker1": {
+        "url": "./img/stickers/sticker051.png",
+        "number": 21
+      }, 
+      "sticker2": {
+        "url": "./img/stickers/sticker152.png",
+        "number": 12
+      },
+      "sticker3": {
+        "url": "./img/stickers/sticker151.png",
+        "number": 21
+      },
+      "sticker4": {
+        "url": "./img/stickers/sticker150.png",
+        "number": 31
+      },
+      "sticker5": {
+        "url": "./img/stickers/sticker149.png",
+        "number": 44
+      },
+      "sticker6": {
+        "url": "./img/stickers/sticker148.png",
+        "number": 5
+      },
+      "sticker7": {
+        "url": "./img/stickers/sticker147.png",
+        "number": 6
+      },
+      "sticker8": {
+        "url": "./img/stickers/sticker146.png",
+        "number": 7
+      },
+      "sticker9": {
+        "url": "./img/stickers/sticker145.png",
+        "number": 8
+      },
+      "sticker10": {
+        "url": "./img/stickers/sticker125.png",
+        "number": 11
+      }
+    },
+  
+    "tags": ["art", "boy"],
+    "likes": 30,
+    "comments": 10,
+    "background": "./img/background/background22.png"
+  },
+  {
+    "userImg" : "./img/user-avatar/user026.webp",
+    "nickname": "Kai",
+    "username": "@Brocon",
+    "timePosted": "5 hours ago",
+    "postImg": "./img/fireside/fireside32.webp",
+    "content": "Undyne or Undead?",
+    "supporters": ["./img/user-avatar/user011.webp", "./img/user-avatar/user061.webp", "./img/user-avatar/user101.webp"],
+    "stickers": {
+      "sticker1": {
+        "url": "./img/stickers/sticker041.png",
+        "number": 51
+      }, 
+      "sticker2": {
+        "url": "./img/stickers/sticker152.png",
+        "number": 52
+      },
+      "sticker3": {
+        "url": "./img/stickers/sticker151.png",
+        "number": 51
+      },
+      "sticker4": {
+        "url": "./img/stickers/sticker150.png",
+        "number": 58
+      },
+      "sticker5": {
+        "url": "./img/stickers/sticker149.png",
+        "number": 54
+      },
+      "sticker6": {
+        "url": "./img/stickers/sticker148.png",
+        "number": 35
+      },
+      "sticker7": {
+        "url": "./img/stickers/sticker147.png",
+        "number": 16
+      },
+      "sticker8": {
+        "url": "./img/stickers/sticker146.png",
+        "number": 71
+      },
+      "sticker9": {
+        "url": "./img/stickers/sticker145.png",
+        "number": 82
+      },
+      "sticker10": {
+        "url": "./img/stickers/sticker125.png",
+        "number": 11
+      }
+    },
+    "tags": ["undead", "phy", "chem"],
+    "likes": 45,
+    "comments": 20,
+    "background": "./img/background/background15.png"
+  },
+  {
+    "userImg" : "./img/user-avatar/user063.webp",
+    "nickname": "Claprose",
+    "username": "@Claprose",
+    "timePosted": "5 hours ago",
+    "postImg": "./img/fireside/fireside31.webp",
+    "content": "Everybody know him?",
+    "supporters": ["./img/user-avatar/user071.webp", "./img/user-avatar/user059.webp", "./img/user-avatar/user037.webp"],
+    "stickers": {
+      "sticker1": {
+        "url": "./img/stickers/sticker031.png",
+        "number": 21
+      }, 
+      "sticker2": {
+        "url": "./img/stickers/sticker112.png",
+        "number": 12
+      },
+      "sticker3": {
+        "url": "./img/stickers/sticker111.png",
+        "number": 21
+      },
+      "sticker4": {
+        "url": "./img/stickers/sticker110.png",
+        "number": 31
+      },
+      "sticker5": {
+        "url": "./img/stickers/sticker119.png",
+        "number": 44
+      },
+      "sticker6": {
+        "url": "./img/stickers/sticker118.png",
+        "number": 5
+      },
+      "sticker7": {
+        "url": "./img/stickers/sticker117.png",
+        "number": 6
+      },
+      "sticker8": {
+        "url": "./img/stickers/sticker116.png",
+        "number": 7
+      },
+      "sticker9": {
+        "url": "./img/stickers/sticker115.png",
+        "number": 8
+      },
+      "sticker10": {
+        "url": "./img/stickers/sticker115.png",
+        "number": 11
+      }
+    },
+    "tags": ["bio", "phy", "chem"],
+    "likes": 45,
+    "comments": 20,
+    "background": "./img/background/background29.png"
+  },
+  {
+    "userImg" : "./img/user-avatar/user072.webp",
+    "nickname": "Elihunt",
+    "username": "@eli_hunter",
+    "timePosted": "2 hours ago",
+    "postImg": "./img/fireside/fireside21.webp",
+    "content": "Big boi",
+    "supporters": ["./img/user-avatar/user011.webp", "./img/user-avatar/user009.webp", "./img/user-avatar/user081.webp"],
+    "stickers": {
+      "sticker1": {
+        "url": "./img/stickers/sticker021.png",
+        "number": 11
+      }, 
+      "sticker2": {
+        "url": "./img/stickers/sticker102.png",
+        "number": 12
+      },
+      "sticker3": {
+        "url": "./img/stickers/sticker101.png",
+        "number": 21
+      },
+      "sticker4": {
+        "url": "./img/stickers/sticker100.png",
+        "number": 31
+      },
+      "sticker5": {
+        "url": "./img/stickers/sticker109.png",
+        "number": 44
+      },
+      "sticker6": {
+        "url": "./img/stickers/sticker108.png",
+        "number": 5
+      },
+      "sticker7": {
+        "url": "./img/stickers/sticker107.png",
+        "number": 6
+      },
+      "sticker8": {
+        "url": "./img/stickers/sticker106.png",
+        "number": 7
+      },
+      "sticker9": {
+        "url": "./img/stickers/sticker105.png",
+        "number": 8
+      },
+      "sticker10": {
+        "url": "./img/stickers/sticker105.png",
+        "number": 11
+      }
+    },
+    "tags": ["coding", "math", "science"],
+    "likes": 30,
+    "comments": 10,
+    "background": "./img/background/background31.png"
+  },
+  {
+    "userImg" : "./img/user-avatar/user051.webp",
+    "nickname": "Cobcatcob",
+    "username": "@catcob",
+    "timePosted": "5 hours ago",
+    "postImg": "./img/fireside/fireside18.webp",
+    "content": "Plants vs Zombies real life",
+    "supporters": ["./img/user-avatar/user099.webp", "./img/user-avatar/user091.webp", "./img/user-avatar/user055.webp"],
+    "stickers": {
+      "sticker1": {
+        "url": "./img/stickers/sticker011.png",
+        "number": 21
+      }, 
+      "sticker2": {
+        "url": "./img/stickers/sticker122.png",
+        "number": 12
+      },
+      "sticker3": {
+        "url": "./img/stickers/sticker121.png",
+        "number": 21
+      },
+      "sticker4": {
+        "url": "./img/stickers/sticker120.png",
+        "number": 31
+      },
+      "sticker5": {
+        "url": "./img/stickers/sticker129.png",
+        "number": 44
+      },
+      "sticker6": {
+        "url": "./img/stickers/sticker128.png",
+        "number": 5
+      },
+      "sticker7": {
+        "url": "./img/stickers/sticker127.png",
+        "number": 6
+      },
+      "sticker8": {
+        "url": "./img/stickers/sticker126.png",
+        "number": 7
+      },
+      "sticker9": {
+        "url": "./img/stickers/sticker125.png",
+        "number": 8
+      },
+      "sticker10": {
+        "url": "./img/stickers/sticker124.png",
+        "number": 11
+      }
+    },
+    "tags": ["bio", "phy", "chem"],
+    "likes": 45,
+    "comments": 20,
+    "background": "./img/background/background11.png"
+  },
+  {
+    "userImg" : "./img/user-avatar/user005.webp",
+    "nickname": "WiseDrums",
+    "username": "@WiseDrums",
+    "timePosted": "5 hours ago",
+    "postImg": "./img/fireside/fireside05.webp",
+    "content": "My Muse Dash art, so cute?",
+    "supporters": ["./img/user-avatar/user024.webp", "./img/user-avatar/user073.webp", "./img/user-avatar/user042.webp"],
+    "stickers": {
+      "sticker1": {
+        "url": "./img/stickers/sticker061.png",
+        "number": 21
+      }, 
+      "sticker2": {
+        "url": "./img/stickers/sticker052.png",
+        "number": 12
+      },
+      "sticker3": {
+        "url": "./img/stickers/sticker051.png",
+        "number": 21
+      },
+      "sticker4": {
+        "url": "./img/stickers/sticker050.png",
+        "number": 31
+      },
+      "sticker5": {
+        "url": "./img/stickers/sticker049.png",
+        "number": 44
+      },
+      "sticker6": {
+        "url": "./img/stickers/sticker048.png",
+        "number": 5
+      },
+      "sticker7": {
+        "url": "./img/stickers/sticker047.png",
+        "number": 6
+      },
+      "sticker8": {
+        "url": "./img/stickers/sticker046.png",
+        "number": 7
+      },
+      "sticker9": {
+        "url": "./img/stickers/sticker045.png",
+        "number": 8
+      },
+      "sticker10": {
+        "url": "./img/stickers/sticker025.png",
+        "number": 11
+      }
+    },
+    "tags": ["bio", "phy", "chem"],
+    "likes": 45,
+    "comments": 20,
+    "background": "./img/background/background18.png"
+  }
+]

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameBot</title>
+    <link rel="shortcut icon" href="./img/Gamebot-logo-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/discover.css">
+    <link rel="stylesheet" href="./css/store.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#" class="logo">
+            <img draggable="false" src="./img/Gamebot-text-removebg-preview.png" width="150px" id="text"
+                alt="GameBot Logo">
+            <img draggable="false" src="./img/Gamebot-logo-removebg-preview.png" width="500px" height="500px" id="img"
+                alt="GameBot Logo">
+        </a>
+        <div class="menu">
+            <a href="#"><i class="fas fa-compass"></i>DISCOVER</a>
+            <a class="store-page" href="#">STORE</a>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+        <input type="text" class="search-bar" placeholder="Search...">
+        <div class="user-controls">
+            <a href="#"><i class="fas fa-bell"></i></a>
+            <a href="#"><i class="fas fa-user-friends"></i></a>
+            <button type="button" id="click-popup"><img id="profile-popup" draggable="false" src="./img/profile.png"
+                    alt="User Image"></button>
+            <button type="button" id="click-delete-popup"><img id="delete-popup" draggable="false"
+                    src="./img/profile.png" alt="User Image"></button>
+        </div>
+    </div>
+    <div class="popup" id="popup">
+        <button class="change-acc-img"><img draggable="false" src="./img/profile.png" alt="User Image"
+                id="profileImage"></button>
+        <input type="file" id="fileInput" accept="image/*" style="display: none;">
+        <span id="popupMessage"></span>
+        <hr width="100px" color="#b1b1b1">
+        <a href="#"><i class="fas fa-user-friends"></i> Friend</a>
+        <a href="#"><i class="fas fa-bell"></i> Notification</a>
+        <a href="#"><i class="fas fa-cog"></i> Setting</a>
+        <a href="#" id="logoutButton"><i class="fas fa-sign-out-alt"></i> Log out</a>
+    </div>
+    <div class="sidebar">
+        <div class="icon" title="Chat and Friend">
+            <i class="fas fa-user-friends"></i>
+            <div class="tooltip">Chat and Friend</div>
+        </div>
+        <div class="icon" title="Shop">
+            <i class="fas fa-store"></i>
+            <div class="tooltip">Shop</div>
+        </div>
+        <div class="icon" title="Backpack">
+            <i class="fa-solid fa-briefcase"></i>
+            <div class="tooltip">Backpack</div>
+        </div>
+        <div class="icon" title="Quest">
+            <i class="fas fa-clipboard-list"></i>
+            <div class="tooltip">Quest</div>
+        </div>
+        <div class="icon" title="Game Library">
+            <i class="fas fa-book"></i>
+            <div class="tooltip">Game Library</div>
+        </div>
+        <div class="separator"></div>
+        <div class="icon create-community" title="Create a Community">
+            <i class="fas fa-plus"></i>
+            <div class="tooltip">Create a Community</div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="main">
+            <div class="account-game-status">
+                <div class="charge">
+                    <div class="charge-text">
+                        <div class="charge-text-title">
+                            Charge
+                        </div>
+                    </div>
+                    <div class="charge-bar">
+                        <div class="charge-ball"></div>
+                        <div class="charge-ball"></div>
+                        <div class="charge-ball"></div>
+                        <div class="charge-ball"></div>
+                        <div class="charge-ball"></div>
+                        <div class="charge-ball"></div>
+                        <div class="charge-ball"></div>
+                    </div>
+                </div>
+                <div class="daily-quest">
+                    <div class="daily-quest-text">
+                        <span>Daily quest</span>
+                        <div class="daily-quest-time">
+                            <i class="fa-solid fa-clock"></i>
+                            <span>12h</span>
+                        </div>
+                    </div>
+                    <div class="daily-quest-content">
+                        <div class="quest">
+                            <div class="quest-icon">
+                                <i class="fa-solid fa-address-book"></i>
+                            </div>
+                            <div class="quest-title">
+                                Make a friend list
+                            </div>
+                            <div class="quest-progress">
+                                <div class="quest-progress-bar">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quest">
+                            <div class="quest-icon">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="quest-title">
+                                Be the first one who like a post
+                            </div>
+                            <div class="quest-progress">
+                                <div class="quest-progress-bar">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quest">
+                            <div class="quest-icon">
+                                <i class="fa-solid fa-shop"></i>
+                            </div>
+                            <div class="quest-title">
+                                Get an item from the shop
+                            </div>
+                            <div class="quest-progress">
+                                <div class="quest-progress-bar">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="invite-link">
+                    <div class="invite-link-text">
+                        <div class="invite-link-text-title">
+                            Invite Link
+                        </div>
+                        <div class="invite-link-text-content">
+                            <input type="text" class="invite-link-text-content-input"
+                                value="https://www.gamejolt.com/invite/123456">
+                        </div>
+                    </div>
+                    <div class="invite-link-button">
+                        <button type="button" class="invite-link-button-copy">Copy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container animate__animated animate__fadeInUp" id="postContainer">
+                <div class="every-followed">
+                    <div class="for-you active">
+                        <span>For you</span>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="followed-span">
+                        <span>Followed</span>
+                        <div class="underline"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="discover">
+
+        </div>
+        <div class="store">
+            <div class="browse-title">
+                Browse Games
+            </div>
+            <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <img src="./img/list-gametype/gametype01.png" alt="">
+                            #action
+                        </li>
+                        <li>
+                            <img src="./img/list-gametype/gametype02.png" alt="">
+                            #horror
+                        </li>
+                        <li>
+                            <img src="./img/list-gametype/gametype03.png" alt="">
+                            #adventure
+                        </li>
+                        <li>
+                            <img src="./img/list-gametype/gametype04.png" alt="">
+                            #fangame
+                        </li>
+                        <li>
+                            <img src="./img/list-gametype/gametype05.png" alt="">
+                            #fnaf
+                        </li>
+                        <li>
+                            <img src="./img/list-gametype/gametype06.png" alt="">
+                            #undertale
+                        </li>
+                        <li>
+                            <img src="./img/list-gametype/gametype07.png" alt="">
+                            #bendy
+                        </li>
+                        <li>
+                            <img src="./img/list-gametype/gametype08.png" alt="">
+                            #fnf
+                        </li>
+                        <li>
+                            <img src="./img/list-gametype/gametype09.png" alt="">
+                            #rpg
+                        </li>
+                        <li>
+                            <img src="./img/list-gametype/gametype10.png" alt="">
+                            #other
+                        </li>
+                        <li>
+                            <img src="./img/list-gametype/gametype11.png" alt="">
+                            #multiplayer
+                        </li>
+                        <li>
+                            <img src="./img/list-gametype/gametype12.png" alt="">
+                            #platformer
+                        </li>
+                        <li>
+                            <img src="./img/list-gametype/gametype13.png" alt="">
+                            #scifi
+                        </li>
+                        <li>
+                            <img src="./img/list-gametype/gametype14.png" alt="">
+                            #retro
+                        </li>
+                        <li>
+                            <img src="./img/list-gametype/gametype15.png" alt="">
+                            #pointnclick
+                        </li>
+                        <li>
+                            <img src="./img/list-gametype/gametype16.png" alt="">
+                            #shooter
+                        </li>
+                        <li>
+                            <img src="./img/list-gametype/gametype17.png" alt="">
+                            #altgame
+                        </li>
+                        <li>
+                            <img src="./img/list-gametype/gametype18.png" alt="">
+                            #vr
+                        </li>
+                        <li>
+                            <img src="./img/list-gametype/gametype19.png" alt="">
+                            #survival
+                        </li>
+                        <li>
+                            <img src="./img/list-gametype/gametype20.png" alt="">
+                            #arcade
+                        </li>
+                        <li>
+                            <img src="./img/list-gametype/gametype21.png" alt="">
+                            #roguelike
+                        </li>
+                        <li>
+                            <img src="./img/list-gametype/gametype22.png" alt="">
+                            #puzzle
+                        </li>
+                        <li>
+                            <img src="./img/list-gametype/gametype23.png" alt="">
+                            #strategy
+                        </li>
+                        <li>
+                            <img src="./img/list-gametype/gametype24.png" alt="">
+                            #sports
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="nav-container">
+                <div class="tabs">
+                    <div class="tab active">Featured</div>
+                    <div class="tab">Hot</div>
+                    <div class="tab">Best</div>
+                    <div class="tab">New</div>
+                </div>
+                <div class="filters">
+                    <div class="dropdown">Price &#9662;</div>
+                    <div class="dropdown">OS &#9662;</div>
+                    <div class="dropdown">Browser &#9662;</div>
+                    <div class="dropdown">Maturity &#9662;</div>
+                    <div class="dropdown">Status &#9662;</div>
+                    <div class="dropdown">Partners &#9662;</div>
+                </div>
+            </div>
+            <section id="games">
+                <!-- Games will be populated here -->
+            </section>
+            </main>
+        </div>
+    </div>
+    <div class="img-popup" id="img-popup">
+        <div class="content">
+            <i class="fa-solid fa-x" id="close-icon"></i>
+            <p>Change Profile Image</p>
+            <button>Upload Image</button>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+    <script src="./js/store.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/vi.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone-with-data.min.js"></script>
+    <script>
+        // Set the default locale to Vietnamese
+        moment.locale('vi');
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,575 @@
+.content .main {
+    margin-left: 70px;
+    padding: 30px 28px;
+    width: 270px;
+}
+
+.account-game-status {
+    margin-top: 80px;
+    max-height: 40vh;
+    width: 100%;
+}
+
+.content .main .account-game-status .invite-link {
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    padding: 10px;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+.content .main .account-game-status .invite-link .invite-link-text .invite-link-text-content input {
+    width: 280px;
+    margin-left: 10px;
+    margin-top: 15px;
+    background: rgba(0,0,0,0.3);
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    padding: 10px;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+.content .main .account-game-status .invite-link .invite-link-text .invite-link-text-content input:focus {
+    outline: none;
+}
+
+.content .main .account-game-status .invite-link .invite-link-button button {
+    background: transparent;
+    text-align: center;
+    border: solid 2px #fff;
+    margin: 25px 15px 0;
+    width: 285px;
+    color: #fff;
+    line-height: 25px;
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.content .main .account-game-status .invite-link .invite-link-button button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.content .main .account-game-status .invite-link .invite-link-text .invite-link-text-content button:focus {
+    outline: none;
+}
+
+.content .main .account-game-status .charge {
+    width: 320px;
+    margin-left: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    padding: 10px;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+.content .main .account-game-status .charge .charge-bar {
+    width: 280px;
+    margin-left: 10px;
+    margin-top: 15px;
+    background: rgba(0,0,0,0.3);
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    padding: 10px;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    display: flex;
+}
+
+.content .main .account-game-status .charge .charge-bar .charge-ball {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 2px solid #9dff00;
+    margin: 0 5px;
+}
+
+/* Continue from the provided index.css */
+
+.content .main .account-game-status .charge .charge-text-title {
+    color: #9dff00;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content .main .account-game-status .daily-quest {
+    width: 280px;
+    margin-left: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    padding: 10px;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.3);
+}
+
+.content .main .account-game-status .daily-quest .quest .quest-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.content .main .account-game-status .daily-quest .quest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.content .main .account-game-status .daily-quest .quest .quest-icon i {
+    font-size: 27px;
+    color: #aaa;
+}
+
+.content .main .account-game-status .daily-quest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+    border-radius: 8px; 
+    width: 280px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.3);
+}
+
+.content .main .account-game-status .daily-quest .daily-quest-text {
+    display: flex;
+    gap: 100px;
+}
+
+.content .main .account-game-status .daily-quest .daily-quest-content {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 10px;
+    gap: 20px;
+    align-items: center;
+}
+
+.content .main .account-game-status .daily-quest .daily-quest-content .quest-title {
+    text-align: center;
+    color: #aaa;
+}
+
+.content .main .account-game-status .daily-quest .daily-quest-content .quest-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transform: rotate(-6.2deg);
+    background-color: var(--primary-bg-color);
+}
+
+.content .main .account-game-status .daily-quest .daily-quest-content .quest-progress .quest-progress-bar {
+    width: 45px;
+    height: 3px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: var(--secondary-bg-color);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+.main #postContainer a {
+    text-decoration: none;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.main #postContainer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#postContainer {
+    display: inline-flex;
+    position: absolute;
+    top: 10px;
+    left: 450px;
+    z-index: 0;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 75.3%;
+    max-height: 1000000000000000000000000000%;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    max-width: 40%;
+    width: 100%;
+
+}
+
+#postContainer:hover {
+    border: none;
+}
+
+.post-container {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 628px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: border 0.3s;
+    padding: 20px 40px;
+}
+
+.post-container:hover {
+    border: 1px solid yellow;
+}
+
+.every-followed {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.every-followed div {
+    position: relative;
+    cursor: pointer;
+}
+
+.every-followed span {
+    text-align: center;
+    position: relative;
+    display: block;
+}
+
+.for-you {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.followed-span {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.underline {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #f0e68c; /* Light yellow */
+    transition: all 0.3s ease;
+}
+
+.for-you.active .underline, .followed-span.active .underline {
+    width: 100%;
+    left: 0;
+    background-color: #ffd700; /* Yellow */
+}
+
+.every-followed div:hover .underline {
+    width: 100%;
+    left: 0;
+}
+
+.no-follow {
+    text-align: center;
+    height: 75.3%;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.post-user-info {
+    display: flex;
+    align-items: center;
+}
+
+.post-user-info img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.post-user-info .user-details {
+    display: flex;
+    gap: 5px;
+}
+
+.post-user-info .user-details .nickname {
+    font-weight: bold;
+}
+
+.post-user-info .user-details .nickname a {
+    color: #fff;
+    text-shadow: 1px 1px 4px rgb(0, 0, 0);
+}
+
+.post-user-info .user-details .username {
+    color: #888;
+}
+
+.post-user-info .user-details .username a {
+    color: #888;
+    text-shadow: 1px 1px 4px rgb(0, 0, 0);
+}
+
+.post-user-info .user-details .username a:hover {
+    color: #fff;
+}
+
+.post-time-follow {
+    display: flex;
+    align-items: center;
+}
+
+.post-time {
+    color: #aaa;
+    font-size: 0.8em;
+    margin-right: 10px;
+}
+
+.follow-button {
+    background: #4b4b4b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.follow-button:hover {
+    background: #525252;
+}
+
+.followed {
+    background: #333;
+    color: #aaa;
+}
+
+.post-img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+    /* max-height: 400px; */
+    /* object-fit: fill; */
+    object-position: top;
+    height: auto;
+}
+
+.post-img img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    width: auto;
+}
+
+.post-content {
+    margin: 10px 0;
+    line-height: 1.5;
+    padding: 10px;
+    background-color: #1f1f1f;
+    border-radius: 20px;
+}
+
+.post-content:hover {
+    border: 1px solid #8aff1d;
+}
+
+.read-more-button {
+    background: #202020;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border: #8aff1d 1px solid;
+}
+
+.read-more-button:hover {
+    background: #8aff1d;
+    color: #181818;
+}
+
+.supporters {
+    display: flex;
+    margin: 10px 0;
+}
+
+.supporters img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #1f1f1f;
+    margin-left: -10px;
+    z-index: 1;
+}
+
+.stickers {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 20px;
+    transition: background ease 0.2s;
+    background-size: cover;
+}
+
+.stickers:hover {
+    background-color: #0f0f0f;
+}
+
+.stickers span img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    transition: background ease 0.3s;
+}
+
+.stickers span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex: 0 0 calc(3.33% - 10px);
+    padding-right: 10px;
+    padding-left: 5px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: #0f0f0f;
+}
+
+.stickers span:hover {
+    background-color: #0f0f0f;
+}
+
+.tags,
+.likes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.tags span {
+    background: rgb(36, 36, 36, 0.9);
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.tags span:hover {
+    background: rgba(44, 44, 44, 0.9);
+}
+
+.icon-1 {
+    cursor: pointer;
+    transition: transform 0.3s;
+    background-color: #0f0f0f;
+    border-radius: 30px;
+    padding: 0 10px;
+}
+
+.icon-1:hover {
+    transform: scale(1.2);
+}
+
+.heart-icon {
+    color: red;
+}
+
+.chat-icon {
+    color: #007bff;
+}
+
+.sticker-icon {
+    color: #017a34
+}
+
+.img-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-popup .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    color: var(--text-color);
+}
+
+.img-popup .content button {
+    background-color: var(--secondary-bg-color);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: var(--text-color);
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.img-popup .content button:hover {
+    background-color: var(--hover-color);
+}
+
+.img-popup .content #close-icon {
+    position: relative;
+    top: 0%;
+    right: -46%;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--text-color);
+}

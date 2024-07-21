@@ -1,0 +1,108 @@
+[
+    {
+        "title": "Time to Morp",
+        "developer": "Team HalfBeard",
+        "image": "./img/games/time-to-morp.webp",
+        "price": "Free",
+        "link": "https://gamejolt.com/games/time-to-morp/518707"
+    },
+    {
+        "title": "Rose & Locket",
+        "developer": "WhistlingWizard",
+        "image": "./img/games/rose-locket.webp",
+        "price": "Free",
+        "link": "https://gamejolt.com/games/Roseandlocket/473988"
+    },
+        {
+        "title": "Max the Unifox - Development closed",
+        "developer": "DERUS",
+        "image": "./img/games/unifox.webp",
+        "price": "Free",
+        "link": "https://gamejolt.com/games/maxtheunifox/545129"
+    },
+        {
+        "title": "The Bunny Graveyard",
+        "developer": "Ken 🐦",
+        "image": "./img/games/bunny-graveyard.webp",
+        "price": "$6.99",
+        "link": "https://gamejolt.com/games/thebunnygraveyard/651214"
+    },
+        {
+        "title": "Vagrus - The Riven Reams",
+        "developer": "Lost Pilgrims Studio",
+        "image": "./img/games/vagrus.webp",
+        "price": "Name your price",
+        "link": "https://gamejolt.com/games/vagrus/352743"
+    },
+        {
+        "title": "The Hive",
+        "developer": "Skydome",
+        "image": "./img/games/the-hive.webp",
+        "price": "$14.99",
+        "link": "https://gamejolt.com/games/TheHive/255022"
+    },
+        {
+        "title": "Aurascope",
+        "developer": "ИICK★",
+        "image": "./img/games/aurascope.webp",
+        "price": "Free",
+        "link": "https://gamejolt.com/games/aurascope/501907"
+    },
+        {
+        "title": "Team Slay-Bells",
+        "developer": "Miles' Games",
+        "image": "./img/games/slay-bells.webp",
+        "price": "Free",
+        "link": "https://gamejolt.com/games/SlayBells/859529"
+    },
+        {
+        "title": "Underfell: Might of the King's Blade",
+        "developer": "MetalMusicMaker",
+        "image": "./img/games/underfell-king-blade.webp",
+        "price": "Free",
+        "link": "https://gamejolt.com/games/UnderfellAsgore/386311"
+    },
+        {
+        "title": "Undertale Green",
+        "developer": "Migs",
+        "image": "./img/games/undertale-green.webp",
+        "price": "Free",
+        "link": "https://gamejolt.com/games/undertalegreen/161268"
+    },
+        {
+        "title": "Into The Deep",
+        "developer": "Decrypt",
+        "image": "./img/games/into-deep.webp",
+        "price": "Free",
+        "link": "https://gamejolt.com/games/into_the_deep/558837"
+    },
+        {
+        "title": "Antigraviator",
+        "developer": "CyberneticWalrus",
+        "image": "./img/games/antigraviator.webp",
+        "price": "Free",
+        "link": "https://gamejolt.com/games/antigraviator/250597"
+    },
+        {
+        "title": "Unbridled Horror",
+        "developer": "Indie_RU",
+        "image": "./img/games/unbridled-horror.webp",
+        "price": "$10.99",
+        "link": "https://gamejolt.com/games/Unbridled_Horror/292577"
+    },
+        {
+        "title": "MindeSeize",
+        "developer": "KaminaDimension",
+        "image": "./img/games/mindseize.webp",
+        "price": "$14.99",
+        "link": "https://gamejolt.com/games/mindseize/344903"
+    },
+        {
+        "title": "Shapik: The Moon Quest",
+        "developer": "Paul Podberezko",
+        "image": "./img/games/shapik-moon-quest.webp",
+        "price": "Free",
+        "link": "https://gamejolt.com/games/shapik-the-moon-quest/135240"
+    }
+]
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/Gamebot-logo-removebg-preview.png" type="image/x-icon">
+    <title>Login or Register</title>
+    <link rel="stylesheet" href="./css/logre.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#" class="logo">
+            <img draggable="false" src="./img/Gamebot-text-removebg-preview.png" width="150px" id="text"
+                alt="GameBot Logo">
+            <img draggable="false" src="./img/Gamebot-logo-removebg-preview.png" width="500px" height="500px" id="img"
+                alt="GameBot Logo">
+        </a>
+        <div class="menu">
+            <a href="#">STORE</a>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+        </div>
+        <input type="text" class="search-bar" placeholder="Search...">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="container">
+        <div class="form-container sign-in-container">
+            <form id="loginForm">
+                <h1>Sign in</h1>
+                <input type="email" placeholder="Email" id="loginEmail" required />
+                <input type="password" placeholder="Password" id="loginPassword" required />
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+        <div class="form-container sign-up-container">
+            <form id="registerForm">
+                <h1>Create Account</h1>
+                <input type="text" placeholder="Name" id="registerName" required />
+                <input type="email" placeholder="Email" id="registerEmail" required />
+                <input type="password" placeholder="Password" id="registerPassword" required />
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast"></div>
+
+    <script type="module" src="./js/logre.js"></script>
+</body>
+
+</html>
