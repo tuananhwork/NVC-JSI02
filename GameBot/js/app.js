@@ -1,4 +1,4 @@
-import { signOut } from 'https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js';
+import { signOut, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js';
 import { auth } from './firebase-config.js';
 import { handleRedirect, handleToast } from './ultis.js';
 
@@ -34,6 +34,14 @@ const logoutButton = document.getElementById('logoutButton');
     imgChangePopup.style.display = 'none';
   });
 })();
+
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    const uid = user.uid;
+  } else {
+    handleRedirect('logre.html');
+  }
+});
 
 logoutButton.addEventListener('click', () => {
   signOut(auth)
