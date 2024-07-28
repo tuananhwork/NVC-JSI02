@@ -1,3 +1,5 @@
+const toast = document.querySelector('.toast');
+
 // Handle Toast
 export const handleToast = (content, bgColor) => {
   toast.style.display = 'block';

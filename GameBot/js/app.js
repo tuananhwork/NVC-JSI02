@@ -1,5 +1,6 @@
 import { signOut } from 'https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js';
 import { auth } from './firebase-config.js';
+import { handleRedirect, handleToast } from './ultis.js';
 
 const clickPopUp = document.querySelector('#click-popup');
 const clickDeletePopup = document.querySelector('#click-delete-popup');
@@ -37,10 +38,11 @@ const logoutButton = document.getElementById('logoutButton');
 logoutButton.addEventListener('click', () => {
   signOut(auth)
     .then(() => {
-      console.log('SignOut Success!!!');
+      handleToast('Logout Success!', 'green');
+      handleRedirect('logre.html');
     })
     .catch((err) => {
-      console.log('SignOut Failure!!');
+      handleToast(err.message, 'red');
     });
 });
 
