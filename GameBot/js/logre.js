@@ -31,6 +31,12 @@ const handleToast = (content, bgColor) => {
   }, 1000);
 };
 
+const handleRedirectHome = () => {
+  setTimeout(() => {
+    window.location.href = './index.html';
+  });
+};
+
 // Register User
 registerForm.addEventListener('submit', async (event) => {
   event.preventDefault();
@@ -42,6 +48,7 @@ registerForm.addEventListener('submit', async (event) => {
   try {
     const res = await createUserWithEmailAndPassword(auth, email, password);
     handleToast('Register Success!', 'green');
+    handleRedirectHome();
   } catch (error) {
     handleToast(error.message, 'red');
   }
@@ -56,6 +63,7 @@ loginForm.addEventListener('submit', async (event) => {
   try {
     const res = await signInWithEmailAndPassword(auth, email, password);
     handleToast('Login Success!', 'green');
+    handleRedirectHome();
   } catch (error) {
     handleToast(error.message, 'red');
   }

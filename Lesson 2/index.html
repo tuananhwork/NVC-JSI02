@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // const myArr = [4, 5, 10, 11, 100, 200]
+        // const myArrCopy = [...myArr]
+        // console.log(myArrCopy);
+
+        // const human = {
+        //     name: 'Human',
+        //     age: 100,
+        //     email: 'human@gmail.com'
+        // }
+
+        // const humanName = human.name
+        // const humanAge = human.age
+        // const humanEmail = human.email
+
+        // const { name, age, email } = human
+
+        // console.log(humanName, humanAge, humanEmail);
+        // console.log(name, age, email);
+
+        // Array default values
+        // let [x = 1, y = 2, z = 3] = [10, undefined];
+        // // console.log(x); // 10 (được gán từ mảng)
+        // // console.log(y); // 2  (giá trị mặc định)
+        // // console.log(z); // 3  (giá trị mặc định)
+
+        // const user = [undefined, undefined, undefined]
+        // const [name = 'User', age = 'Empty', gender = 'Other'] = user
+
+        // console.log(name, age, gender);
+
+
+        // // Object default values
+        // let { a = 10, b = 20 } = { a: 5 };
+        // console.log(a); // 5  (được gán từ đối tượng)
+        // console.log(b); // 20 (giá trị mặc định)
+
+        // const myArr = [1, 5, 10]
+        // const myArr2 = [6, 4, 8]
+
+        // const [, , c] = myArr
+
+
+        // const user = {
+        //     name: 'Tuan Anh',
+        //     gender: 'Male',
+        //     email: 'anhcbt@gmail.com',
+        //     password: '234567'
+        // }
+
+        // const { name, gender, ...account } = user
+        // console.log(account);
+        // const { email, password } = account
+        // console.log(email, password);
+
+
+
+        // Rest: Đồ thừa, đồ còn lại
+        // Spread: Rải ra, đổ ra
+
+        // const [a, b, ...rest] = myArr
+        // console.log(rest);
+
+        // const newArr = [...myArr, ...myArr2]
+        // console.log(newArr);
+
+
+        // OOP
+        // Định nghĩa lớp
+        class Person {
+            // Thuộc tính - Properties
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+
+            // Phương thức - Methods
+            greet() {
+                console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+            }
+        }
+
+        // Tạo đối tượng từ lớp
+        const person1 = new Person('Alice', 30);
+        const person2 = new Person('Bob', 25);
+
+        // Sử dụng phương thức của đối tượng
+        person1.greet(); // Hello, my name is Alice and I am 30 years old.
+        person2.greet(); // Hello, my name is Bob and I am 25 years old.
+
+    </script>
+</body>
+
+</html>
