@@ -1,3 +1,6 @@
+import { signOut } from 'https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js';
+import { auth } from './firebase-config.js';
+
 const clickPopUp = document.querySelector('#click-popup');
 const clickDeletePopup = document.querySelector('#click-delete-popup');
 const popup = document.querySelector('.popup');
@@ -7,6 +10,7 @@ const inviteButton = document.querySelector('.invite-link-button-copy');
 const imgChangePopup = document.querySelector('#img-popup');
 const imgDeleteChangePopup = document.querySelector('#close-icon');
 const imgChangePopupBtn = document.querySelector('#img-popup button');
+const logoutButton = document.getElementById('logoutButton');
 
 (function handleUI() {
   clickPopUp.addEventListener('click', () => {
@@ -30,13 +34,14 @@ const imgChangePopupBtn = document.querySelector('#img-popup button');
   });
 })();
 
-document.getElementById('logoutButton').addEventListener('click', function () {
-  const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
-  if (loggedInUser) {
-    loggedInUser.isLoggedIn = false;
-    localStorage.setItem('loggedInUser', JSON.stringify(loggedInUser));
-  }
-  window.location.href = 'logre.html';
+logoutButton.addEventListener('click', () => {
+  signOut(auth)
+    .then(() => {
+      console.log('SignOut Success!!!');
+    })
+    .catch((err) => {
+      console.log('SignOut Failure!!');
+    });
 });
 
 // window.addEventListener('load', () => {
