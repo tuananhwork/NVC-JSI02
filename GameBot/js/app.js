@@ -1,6 +1,6 @@
 import { signOut, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js';
 import { auth } from './firebase-config.js';
-import { handleRedirect, handleToast } from './ultis.js';
+import { handleRedirect, handleToast } from './utils.js';
 
 const clickPopUp = document.querySelector('#click-popup');
 const clickDeletePopup = document.querySelector('#click-delete-popup');

@@ -4,7 +4,7 @@ import {
 } from 'https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js';
 import { auth } from './firebase-config.js';
 
-import { handleRedirect, handleToast } from './ultis.js';
+import { handleRedirect, handleToast } from './utils.js';
 
 const signInButton = document.getElementById('signIn');
 const signUpButton = document.getElementById('signUp');
