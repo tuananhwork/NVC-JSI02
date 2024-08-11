@@ -6,6 +6,7 @@ import {
   GoogleAuthProvider,
   GithubAuthProvider,
   signInWithPopup,
+  signOut,
 } from 'https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js';
 import { redirect } from './utils/utils.js';
 
@@ -76,6 +77,16 @@ const handleGithubLogin = () => {
 };
 
 // Viết hàm xử lý đăng xuất
+export const handleLogout = () => {
+  signOut(auth)
+    .then(() => {
+      console.log('Logout Success!');
+      redirect();
+    })
+    .catch((e) => {
+      console.log('Logout Error:', e.message);
+    });
+};
 
 // Xử lý với DOM
 const loginForm = document.getElementById('loginForm');
@@ -85,5 +96,5 @@ const githubButton = document.getElementById('githubLogin');
 
 if (loginForm) handleLoginWithEmailAndPassword(loginForm);
 if (signupForm) handleSignupWithEmailAndPassword(signupForm);
-googleButton.addEventListener('click', handleGoogleLogin);
-githubButton.addEventListener('click', handleGithubLogin);
+if (googleButton) googleButton.addEventListener('click', handleGoogleLogin);
+if (githubButton) githubButton.addEventListener('click', handleGithubLogin);
