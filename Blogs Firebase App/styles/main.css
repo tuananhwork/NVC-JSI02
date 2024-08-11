@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.blog-list {
+  margin-top: 30px;
+}
+
+.blog-post {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.post-content {
+  flex-grow: 1;
+}
+
+.post-content h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.post-meta {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.post-excerpt {
+  margin-bottom: 15px;
+}
+
+.read-more {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+}

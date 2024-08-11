@@ -15,11 +15,16 @@ const registerForm = document.getElementById('register-form');
 console.log(loginForm, registerForm);
 
 registerForm.addEventListener('submit', (e) => {
-  //   e.preventDefault();
+  e.preventDefault();
+
   const name = registerForm.registerName.value;
   const username = registerForm.registerUsername.value;
   const email = registerForm.registerEmail.value;
   const password = registerForm.registerPassword.value;
   const repeatPassword = registerForm.registerRepeatPassword.value;
+
+  const userData = { name, username, email };
+  console.log(userData);
+
   console.log(name, username, email, password, repeatPassword);
 });

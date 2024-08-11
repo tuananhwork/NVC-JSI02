@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - My Blog</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>My Blog</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="create-post.html">Create Post</a>
+                <a href="logout.html">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>My Posts</h2>
+            <div class="post-list">
+                <!-- Example Post Item -->
+                <div class="post-item">
+                    <h3 class="post-title">Post Title 1</h3>
+                    <img src="../assets/images/blog.webp" alt="Post Image" class="post-image">
+                    <p class="post-summary">This is a summary of the blog post. Click the link to read more.</p>
+                    <a href="post.html" class="view-link">View</a>
+                    <a href="edit-post.html" class="edit-link">Edit</a>
+                    <a href="#" class="delete-link">Delete</a>
+                </div>
+                <!-- Repeat the above block for each post -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Blog. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
