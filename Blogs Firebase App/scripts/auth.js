@@ -4,6 +4,7 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   GoogleAuthProvider,
+  GithubAuthProvider,
   signInWithPopup,
 } from 'https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js';
 import { redirect } from './utils/utils.js';
@@ -60,11 +61,23 @@ const handleGoogleLogin = () => {
     });
 };
 
-const handleGithubLogin = () => {};
+const handleGithubLogin = () => {
+  const provider = new GithubAuthProvider();
+  signInWithPopup(auth, provider)
+    .then((result) => {
+      const credential = GithubAuthProvider.credentialFromResult(result);
+      const user = result.user;
+      console.log('Login with Github Success!');
+      redirect();
+    })
+    .catch((e) => {
+      console.log(e.message);
+    });
+};
 
 // Viết hàm xử lý đăng xuất
 
-// Xử lý
+// Xử lý với DOM
 const loginForm = document.getElementById('loginForm');
 const signupForm = document.getElementById('signupForm');
 const googleButton = document.getElementById('googleLogin');
