@@ -3,6 +3,8 @@ import { auth } from './firebase-config.js';
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
+  GoogleAuthProvider,
+  signInWithPopup,
 } from 'https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js';
 import { redirect } from './utils/utils.js';
 
@@ -44,12 +46,31 @@ const handleSignupWithEmailAndPassword = (signupForm) => {
 };
 
 // Viết hàm đăng nhập bằng Google, Github
+const handleGoogleLogin = () => {
+  const provider = new GoogleAuthProvider();
+  signInWithPopup(auth, provider)
+    .then((result) => {
+      const credential = GoogleAuthProvider.credentialFromResult(result);
+      const user = result.user;
+      console.log('Login with Google Success!');
+      redirect();
+    })
+    .catch((e) => {
+      console.log(e.message);
+    });
+};
+
+const handleGithubLogin = () => {};
 
 // Viết hàm xử lý đăng xuất
 
 // Xử lý
 const loginForm = document.getElementById('loginForm');
 const signupForm = document.getElementById('signupForm');
+const googleButton = document.getElementById('googleLogin');
+const githubButton = document.getElementById('githubLogin');
 
 if (loginForm) handleLoginWithEmailAndPassword(loginForm);
 if (signupForm) handleSignupWithEmailAndPassword(signupForm);
+googleButton.addEventListener('click', handleGoogleLogin);
+githubButton.addEventListener('click', handleGithubLogin);
