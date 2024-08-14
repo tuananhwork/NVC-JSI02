@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Blog</title>
-    <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/main.css">
 </head>
 
 <body>
     <header>
         <div class="container">
-            <h1>My Blog</h1>
+            <h1>My Blog - Home</h1>
             <nav>
                 <a href="index.html">Home</a>
+                <a href="create-post.html">Create Post</a>
                 <a href="dashboard.html">Dashboard</a>
+                <a href="profile.html">Profile</a>
                 <a href="#" id="logout">Log Out</a>
             </nav>
         </div>
@@ -24,23 +26,11 @@
     <main>
         <div class="container">
             <section class="blog-list">
-                <article class="blog-post">
-                    <img src="../assets/images/blog.webp" alt="Post Cover Image">
-                    <div class="post-content">
-                        <h2>Post Title 1</h2>
-                        <p class="post-meta">by <span class="author">John Doe</span> on <span class="date">August 10,
-                                2024</span></p>
-                        <p class="post-excerpt">
-                            This is a brief description of the blog post. It provides a summary or an introduction to
-                            the content...
-                        </p>
-                        <a href="post.html" class="read-more">Read More</a>
-                    </div>
-                </article>
-
-                <!-- Repeat the article block for more blog posts -->
-
+                <!-- Blog list here -->
             </section>
+
+            <button id="load-more" style="display: none;">Tải thêm</button>
+
         </div>
     </main>
 

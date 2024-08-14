@@ -1,5 +1,5 @@
 // Import auth và các hàm cần thiết
-import { auth } from './firebase-config.js';
+import { auth, db } from './firebase-config.js';
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -8,9 +8,13 @@ import {
   signInWithPopup,
   signOut,
 } from 'https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js';
+import { doc, setDoc, getDoc } from 'https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js';
+
 import { redirect } from './utils/utils.js';
 
-// Viết hàm xử lý đăng nhập
+// Hàm tạo đối tượng initUser khi người dùng đăng ký mới
+
+// Viết hàm xử lý đăng nhậ<p></p>
 const handleLoginWithEmailAndPassword = (loginForm) => {
   loginForm.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -38,8 +42,8 @@ const handleSignupWithEmailAndPassword = (signupForm) => {
         const res = await createUserWithEmailAndPassword(auth, email, password);
         console.log('Signup Success!');
         redirect();
-      } catch (error) {
-        console.error('Signup Error:', error.message);
+      } catch (e) {
+        console.error('Signup Error:', e.message);
       }
     } else {
       console.log('Password does not match!');
@@ -48,32 +52,28 @@ const handleSignupWithEmailAndPassword = (signupForm) => {
 };
 
 // Viết hàm đăng nhập bằng Google, Github
-const handleGoogleLogin = () => {
+const handleGoogleLogin = async () => {
   const provider = new GoogleAuthProvider();
-  signInWithPopup(auth, provider)
-    .then((result) => {
-      const credential = GoogleAuthProvider.credentialFromResult(result);
-      const user = result.user;
-      console.log('Login with Google Success!');
-      redirect();
-    })
-    .catch((e) => {
-      console.log(e.message);
-    });
+  try {
+    const result = await signInWithPopup(auth, provider);
+
+    console.log('Login with Google Success!');
+    redirect();
+  } catch (e) {
+    console.log('Google Login Fail. Error:', e.message);
+  }
 };
 
-const handleGithubLogin = () => {
+const handleGithubLogin = async () => {
   const provider = new GithubAuthProvider();
-  signInWithPopup(auth, provider)
-    .then((result) => {
-      const credential = GithubAuthProvider.credentialFromResult(result);
-      const user = result.user;
-      console.log('Login with Github Success!');
-      redirect();
-    })
-    .catch((e) => {
-      console.log(e.message);
-    });
+  try {
+    const result = await signInWithPopup(auth, provider);
+
+    console.log('Login with Github Success!');
+    redirect();
+  } catch (e) {
+    console.log('Github Login Fail. Error:', e.message);
+  }
 };
 
 // Viết hàm xử lý đăng xuất
