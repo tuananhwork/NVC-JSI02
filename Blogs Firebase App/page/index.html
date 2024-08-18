@@ -27,6 +27,19 @@
         <div class="container">
             <section class="blog-list">
                 <!-- Blog list here -->
+
+                <article class="blog-post">
+                    <img src="${postData.imageUrl}" alt="Post Cover Image">
+                    <div class="post-content">
+                        <h2>${postData.title}</h2>
+                        <p class="post-meta">by <span class="author">${postData.authorName}</span> on
+                            <span class="date">${postData.createdAt.toDate().toLocaleDateString()}</span>
+                        </p>
+                        <p class="post-excerpt">${postData.content}</p>
+                        <a href="post-detail.html?id=${postId}" class="read-more">Read More</a>
+                    </div>
+                </article>
+
             </section>
 
             <button id="load-more" style="display: none;">Tải thêm</button>

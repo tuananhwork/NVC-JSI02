@@ -13,8 +13,19 @@ import { doc, setDoc, getDoc } from 'https://www.gstatic.com/firebasejs/10.12.5/
 import { redirect } from './utils/utils.js';
 
 // Hàm tạo đối tượng initUser khi người dùng đăng ký mới
+const initUser = (user) => {
+  return {
+    name: user.displayName || 'User', // Tên có thể cập nhật lại sau (ở trang Profile)
+    email: user.email,
+    profilePicture: user.photoURL || '', // Ảnh đại diện có thể cập nhật sau
+    bio: '', // Tiểu sử của người dùng, có thể cập nhật sau
+    createdAt: new Date(),
+    role: 'user', // Sau này có thể để một số người làm admin khi cần thiết
+    posts: [], // Nơi lưu trữ các bài viết của user hiện tại, mảng này sẽ cập nhật khi người dùng đăng bài
+  };
+};
 
-// Viết hàm xử lý đăng nhậ<p></p>
+// Viết hàm xử lý đăng nhập
 const handleLoginWithEmailAndPassword = (loginForm) => {
   loginForm.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -40,6 +51,10 @@ const handleSignupWithEmailAndPassword = (signupForm) => {
     if (confirmPassword === password) {
       try {
         const res = await createUserWithEmailAndPassword(auth, email, password);
+        const user = res.user;
+        const userData = initUser(user);
+        const userRef = doc(db, 'users', user.uid);
+        await setDoc(userRef, userData);
         console.log('Signup Success!');
         redirect();
       } catch (e) {
@@ -56,6 +71,15 @@ const handleGoogleLogin = async () => {
   const provider = new GoogleAuthProvider();
   try {
     const result = await signInWithPopup(auth, provider);
+    const user = result.user;
+
+    // Kiểm tra xem tài liệu người dùng đã tồn tại chưa
+    const userDoc = await getDoc(doc(db, 'users', user.uid));
+
+    if (!userDoc.exists()) {
+      const userData = initUser(user);
+      await setDoc(doc(db, 'users', user.uid), userData);
+    }
 
     console.log('Login with Google Success!');
     redirect();
@@ -68,6 +92,15 @@ const handleGithubLogin = async () => {
   const provider = new GithubAuthProvider();
   try {
     const result = await signInWithPopup(auth, provider);
+    const user = result.user;
+
+    // Kiểm tra xem tài liệu người dùng đã tồn tại chưa
+    const userDoc = await getDoc(doc(db, 'users', user.uid));
+
+    if (!userDoc.exists()) {
+      const userData = initUser(user);
+      await setDoc(doc(db, 'users', user.uid), userData);
+    }
 
     console.log('Login with Github Success!');
     redirect();

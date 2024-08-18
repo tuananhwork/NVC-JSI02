@@ -14,3 +14,26 @@ import { handleLogout } from './auth.js';
 
 const logoutButton = document.getElementById('logout');
 logoutButton.addEventListener('click', handleLogout);
+
+handleImagePreview('image', 'imagePreview');
+
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    // Có thể tạo bài viết mới
+    const createPost = async (postForm) => {
+      postForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const title = postForm.title.value;
+        const content = postForm.content.value;
+        const image = postForm.image.files[0];
+
+        console.log(title, content, image);
+      });
+    };
+
+    const postForm = document.getElementById('createPostForm');
+    createPost(postForm);
+  } else {
+  }
+});
